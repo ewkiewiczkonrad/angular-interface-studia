@@ -3,3 +3,9 @@
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 12px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .int-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
