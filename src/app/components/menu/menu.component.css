@@ -1,0 +1,13 @@
+.box{
+  background: violet;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
