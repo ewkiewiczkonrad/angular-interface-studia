@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NAVI } from 'src/app/const';
 
 @Component({
   selector: 'app-menu',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-
+  NAVI = NAVI;
 }

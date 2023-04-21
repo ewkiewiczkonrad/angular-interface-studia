@@ -8,6 +8,10 @@ import { BadgesComponent } from './components/badges/badges.component';
 import { ProfitComponent } from './components/profit/profit.component';
 import { TotalComponent } from './components/total/total.component';
 import { ContentComponent } from './components/content/content.component';
+import { SecondContentComponent } from './components/second-content/second-content.component';
+import { ThirdContentComponent } from './components/third-content/third-content.component';
+import {AppRoutingModule} from "./app-routing.module";
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,10 +21,14 @@ import { ContentComponent } from './components/content/content.component';
     BadgesComponent,
     ProfitComponent,
     TotalComponent,
-    ContentComponent
+    ContentComponent,
+    SecondContentComponent,
+    ThirdContentComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
