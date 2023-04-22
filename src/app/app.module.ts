@@ -12,22 +12,25 @@ import { SecondContentComponent } from './components/second-content/second-conte
 import { ThirdContentComponent } from './components/third-content/third-content.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { RouterModule } from '@angular/router';
+import { AuthComponent } from './components/auth/auth.component';
+import { SignInComponent } from './components/auth/sign-in/sign-in.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { LoggedComponent } from './components/logged/logged.component';
+import {LoggedRoutingModule} from "./components/logged/logged-routing.module";
+import {LoggedModule} from "./components/logged/logged.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    SearchBarComponent,
-    BadgesComponent,
-    ProfitComponent,
-    TotalComponent,
-    ContentComponent,
-    SecondContentComponent,
-    ThirdContentComponent,
+    AuthComponent,
+    SignInComponent,
+    RegisterComponent,
+    LoggedComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LoggedModule,
     RouterModule
   ],
   providers: [],

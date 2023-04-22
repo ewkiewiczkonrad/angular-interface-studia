@@ -1,0 +1,29 @@
+<h1>Zarejestruj się</h1>
+<h4>Wypełnij dane aby wysłać je do administratora w celu aktywacji</h4>
+<div class="sign-form">
+  <div class="username">
+    <label for="username">Imie</label>
+    <input id="username" type="text" class="input-sign-in">
+  </div>
+  <div class="password">
+    <label for="password">Nazwisko</label>
+    <input type="password" id="password" class="input-sign-in" />
+  </div>
+  <div class="adres">
+    <label for="adres">Adres</label>
+    <input type="adres" id="adres" class="input-sign-in"/>
+  </div>
+  <div class="city">
+    <label for="city">Miasto</label>
+    <input type="city" id="city" class="input-sign-in"/>
+  </div>
+  <div class="phone">
+    <label for="phone">Numer telefonu</label>
+    <input type="phone" id="phone" class="input-sign-in"/>
+  </div>
+
+  <div class="link-button">
+    <a [routerLink]='NAVI.SIGN_IN_PATH'>Przejdz</a>
+  </div>
+  <button type="button" class="login-button">Zarejestruj się</button>
+</div>
