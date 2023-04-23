@@ -1,16 +1,17 @@
 <h1>Zaloguj się</h1>
 <h4>Wpisz swój login oraz hasło</h4>
+<h4 *ngIf="isWarn" style="color:red;">Złe login lub hasło</h4>
 <div class="sign-form">
   <div class="username">
     <label for="username">Username</label>
-    <input id="username" type="text" class="input-sign-in" >
+    <input id="username" type="text" [(ngModel)]="login" class="input-sign-in" >
   </div>
   <div class="password p-float-label">
     <label for="username">Password</label>
-    <input type="password" id="password" class="input-sign-in" />
+    <input type="password" id="password" [(ngModel)]="password" class="input-sign-in" />
   </div>
   <div class="link-button">
     <a [routerLink]='NAVI.REGISTER_PATH'>Przejdz</a>
   </div>
-  <button type="button" class="login-button" [routerLink]='NAVI.LOGGED_PATH'>Zaloguj się</button>
+  <button type="button" class="login-button" (click)="log()">Zaloguj się</button>
 </div>

@@ -18,6 +18,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { LoggedComponent } from './components/logged/logged.component';
 import {LoggedRoutingModule} from "./components/logged/logged-routing.module";
 import {LoggedModule} from "./components/logged/logged.module";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {LoggedModule} from "./components/logged/logged.module";
     BrowserModule,
     AppRoutingModule,
     LoggedModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
